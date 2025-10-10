@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <h1>User Dashboard</h1>
+
+        <div class="tabs">
+            <button class="tab-btn active" onclick="showSection('profile')">Profile</button>
+            <button class="tab-btn" onclick="showSection('settings')">Settings</button>
+            <button class="tab-btn" onclick="showSection('messages')">Messages</button>
+        </div>
+
+        <div class="tab-content">
+            <div id="profile" class="tab-section active">
+                <h2>Profile Section</h2>
+                <p>Welcome to your profile!</p>
+            </div>
+            <div id="settings" class="tab-section">
+                <h2>Settings Section</h2>
+                <p>Change your preferences here.</p>
+            </div>
+            <div id="messages" class="tab-section">
+                <h2>Messages Section</h2>
+                <p>Check your messages.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
