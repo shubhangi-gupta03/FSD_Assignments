@@ -1,51 +1,133 @@
+/* ===== GENERAL ===== */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    margin: 0;
-    padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #0b0b0b;
+  color: #d8b4fe;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
-.dashboard-container {
-    max-width: 800px;
-    margin: 50px auto;
-    background: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+/* ===== HEADER ===== */
+header {
+  background: linear-gradient(90deg, #3d3b5d, #6b4ea0);
+  color: #fff;
+  padding: 2rem 1rem;
+  text-shadow: 0 0 10px #a066d3;
 }
 
-h1 {
-    text-align: center;
-    margin-bottom: 20px;
+header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0.3rem;
+  letter-spacing: 2px;
 }
 
-.tabs {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
+header p {
+  font-size: 1.2rem;
+  color: #e6ccff;
+  margin: 0;
 }
 
-.tab-btn {
-    padding: 10px 20px;
-    margin: 0 5px;
-    border: none;
-    background-color: #ddd;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: 0.3s;
+/* ===== CONTAINER ===== */
+.container {
+  width: 90%;
+  margin: 2rem auto;
 }
 
-.tab-btn.active, .tab-btn:hover {
-    background-color: #4285F4;
-    color: #fff;
+/* ===== TOP BAR ===== */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
 }
 
-.tab-section {
-    display: none;
-    padding: 20px;
-    border-top: 1px solid #ccc;
+#searchBar {
+  width: 60%;
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background-color: #1f1b2e;
+  color: #fff;
+  box-shadow: 0 0 8px #a066d3;
 }
 
-.tab-section.active {
-    display: block;
+.upload-btn {
+  background-color: #a066d3;
+  color: white;
+  border: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 15px 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px #a066d3;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.upload-btn:hover {
+  background-color: #8b4ec7;
+  box-shadow: 0 0 25px #b478f5;
+  transform: scale(1.05);
+}
+
+/* ===== RECIPE GRID ===== */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 20px;
+}
+
+/* ===== RECIPE CARD ===== */
+.recipe {
+  background-color: #1e1b2c;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(160, 102, 211, 0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.recipe:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(160, 102, 211, 0.7);
+}
+
+.recipe h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #d8b4fe;
+}
+
+.recipe p {
+  font-size: 1rem;
+  text-align: left;
+  color: #d1c0e8;
+}
+
+button {
+  background-color: #a066d3;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #8b4ec7;
+  transform: scale(1.05);
+}
+
+/* ===== FOOTER ===== */
+footer {
+  margin-top: 30px;
+  padding: 1rem;
+  background-color: #1e1b2c;
+  color: #d8b4fe;
+  box-shadow: 0 -2px 10px rgba(160, 102, 211, 0.4);
 }
